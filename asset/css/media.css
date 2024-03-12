@@ -1,0 +1,31 @@
+@media screen and (max-width: 992px) {
+  header nav ul {
+    display: none;
+  }
+  header .button-box {
+    display: none;
+  }
+  header .menu-icon {
+    display: block;
+  }
+  header nav ul {
+    background: var(--white);
+    width: 90%;
+    top: -1000px;
+    left: 5%;
+    position: absolute;
+    z-index: 55;
+    transition: 0.5s;
+  }
+  header nav ul li {
+    border-bottom: 2px solid #ddd;
+  }
+  header nav ul li a {
+    color: var(--black);
+    padding: 10px;
+  }
+}
+
+/* button copy link  */
+
+/* button copy link */
