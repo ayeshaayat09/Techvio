@@ -1,4 +1,11 @@
 @media screen and (max-width: 992px) {
+  header {
+    height: auto;
+    max-height: none;
+  }
+  header .wave-img {
+    height: 25%;
+  }
   header nav ul {
     display: none;
   }
@@ -11,10 +18,10 @@
   header nav ul {
     background: var(--white);
     width: 90%;
-    top: -1000px;
+    top: 0px;
     left: 5%;
     position: absolute;
-    z-index: 55;
+    z-index: 555;
     transition: 0.5s;
   }
   header nav ul li {
@@ -24,8 +31,23 @@
     color: var(--black);
     padding: 10px;
   }
+  header .header-inner {
+    display: block;
+  }
 }
 
-/* button copy link  */
+@media screen and (max-width: 778px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
 
-/* button copy link */
+@media screen and (max-width: 558px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
