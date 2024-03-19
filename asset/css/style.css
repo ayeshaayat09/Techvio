@@ -19,6 +19,21 @@
 .portfolio-item.block {
   display: block;
 } */
+#goTop {
+  position: fixed;
+  bottom: 10000px;
+  right: 20px;
+  z-index: 2000;
+  transition: 1s;
+}
+#goTop i {
+  font-size: 35px;
+  color: var(--white);
+  background-color: var(--bs-purple);
+  padding: 15px;
+  border-radius: 10px;
+}
+
 /* common code end */
 
 :root {

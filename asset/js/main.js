@@ -138,3 +138,26 @@ var splide = new Splide(".splide", {
 });
 
 splide.mount();
+
+// go top btn
+
+const goTopBtn = document.getElementById("goTop");
+
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  if (window.scrollY > 500) {
+    goTopBtn.style.bottom = "20px";
+  } else {
+    goTopBtn.style.bottom = "10000px";
+  }
+});
+// handle event bottom to top buttom
+goTopBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+// loder
+const loser = Document.getElementById("loader");
+window.addEventListener("load", () => {
+  loser.style.display = "none";
+});
