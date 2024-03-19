@@ -60,20 +60,81 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // counter
-const counts = document.querySelectorAll(".count");
-const speed = 97;
+// const counts = document.querySelectorAll(".count");
+// const speed = 97;
 
-counts.forEach((counter) => {
-  function upDate() {
-    const target = Number(counter.getAttribute("data-target"));
-    const count = Number(counter.innerText);
-    const inc = target / speed;
-    if (count < target) {
-      counter.innerText = Math.floor(inc + count);
-      setTimeout(upDate, 15);
-    } else {
-      counter.innerText = target;
-    }
+// counts.forEach((counter) => {
+//   function upDate() {
+//     const target = Number(counter.getAttribute("data-target"));
+//     const count = Number(counter.innerText);
+//     const inc = target / speed;
+//     if (count < target) {
+//       counter.innerText = Math.floor(inc + count);
+//       setTimeout(upDate, 15);
+//     } else {
+//       counter.innerText = target;
+//     }
+//   }
+//   upDate();
+// });
+function animateCounters() {
+  const counters = document.querySelectorAll(".count");
+  const speed = 200; // Speed of incrementing in milliseconds
+
+  counters.forEach((counter) => {
+    const target = +counter.getAttribute("data-target");
+    const increment = target / speed;
+
+    let count = 0;
+
+    const updateCount = () => {
+      count += increment;
+      counter.innerText = Math.ceil(count);
+
+      if (count < target) {
+        setTimeout(updateCount, 1);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+}
+
+// Run the animation when the page is loaded
+window.addEventListener("load", animateCounters);
+
+// portfolio onclick
+const tabBtns = document.querySelectorAll(".tab-btn");
+const items = document.querySelectorAll(".portfolio-item");
+
+function openTab(tabName) {
+  for (let btn of tabBtns) {
+    btn.classList.remove("active");
   }
-  upDate();
+  event.target.classList.add("active");
+  for (let item of items) {
+    item.classList.add("hidden");
+    item.classList.remove("block");
+  }
+  const activeItems = document.getElementsByClassName(tabName);
+  for (let activeItem of activeItems) {
+    activeItem.classList.add("block");
+  }
+}
+
+// slider
+var splide = new Splide(".splide", {
+  type: "loop",
+  perPage: 3,
+  focus: "center",
+  autoplay: true,
+  gap: 40,
+  interval: 3000,
+  pauseOnHover: true,
+  // arrows: false,
+  // arrowPath: "",
 });
+
+splide.mount();

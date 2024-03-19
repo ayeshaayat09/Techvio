@@ -14,6 +14,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <!-- main stylesheet -->
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <!-- slider link  -->
     <link rel="stylesheet" href="./asset/css/style.css" />
     <link rel="stylesheet" href="./asset/css/media.css" />
   </head>
@@ -63,7 +70,12 @@
           <button>Contact us <span class="btn-after"></span></button>
         </div>
         <div class="header-img">
-          <img src="./asset/image/template05.png" alt="header img" />
+          <img
+            data-tilt
+            max:50
+            src="./asset/image/template05.png"
+            alt="header img"
+          />
         </div>
       </div>
       <img
@@ -261,156 +273,264 @@
       </div>
     </section>
     <!-- trust us section end -->
+
     <!-- Portfolio section start  -->
-    <section class="container protfolio">
-      <div class="protfolio-content">
-        <h3>RECENT WORKS</h3>
-        <h2>Our Portfolio</h2>
-        <div class="protfolio-nav">
-          <ul>
-            <li><span class="pro-li">All</span></li>
-            <li>Branding</li>
-            <li>Application</li>
-            <li>Web Design</li>
-            <li>Photography</li>
-          </ul>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="portfolio-section">
+          <div class="section-title">
+            <h6 class="sub-title">RECENT WORKS</h6>
+            <h2>Our Portfolio</h2>
+            <ul class="portfolio-list">
+              <li>
+                <span class="tab-btn active" onclick="openTab('portfolio-item')"
+                  >All</span
+                >
+              </li>
+              <li>
+                <span class="tab-btn" onclick="openTab('branding')"
+                  >Branding</span
+                >
+              </li>
+              <li>
+                <span class="tab-btn" onclick="openTab('application')"
+                  >Application</span
+                >
+              </li>
+              <li>
+                <span class="tab-btn" onclick="openTab('web-design')"
+                  >Web Design</span
+                >
+              </li>
+              <li>
+                <span class="tab-btn" onclick="openTab('photography')"
+                  >Photography</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="portfolio-images">
+            <div class="portfolio-item branding">
+              <img src="./asset/image/template10 (2).jpg" alt="portfolio-1" />
+              <div class="portfolio-content-overlay">
+                <p>App Store | Social Media</p>
+                <h3><a href="">Creative Web Design</a></h3>
+                <a class="portfolio-link-icon" href=""
+                  ><i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+            <!-- single portfolio item -->
+
+            <div class="portfolio-item">
+              <img src="./asset/image/template11 (2).jpg" alt="portfolio-2" />
+              <div class="portfolio-content-overlay">
+                <p>App Store | Social Media</p>
+                <h3><a href="">Creative Web Design</a></h3>
+                <a class="portfolio-link-icon" href=""
+                  ><i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+            <!-- single portfolio item -->
+
+            <div class="portfolio-item branding web-design">
+              <img src="./asset/image/template12 (2).jpg" alt="portfolio-3" />
+              <div class="portfolio-content-overlay">
+                <p>App Store | Social Media</p>
+                <h3><a href="">Creative Web Design</a></h3>
+                <a class="portfolio-link-icon" href=""
+                  ><i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+            <!-- single portfolio item -->
+
+            <div class="portfolio-item web-design">
+              <img src="./asset/image/template13 (2).jpg" alt="portfolio-4" />
+              <div class="portfolio-content-overlay">
+                <p>App Store | Social Media</p>
+                <h3><a href="">Creative Web Design</a></h3>
+                <a class="portfolio-link-icon" href=""
+                  ><i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+            <!-- single portfolio item -->
+
+            <div class="portfolio-item application photography">
+              <img src="./asset/image/template14 (2).jpg" alt="portfolio-5" />
+              <div class="portfolio-content-overlay">
+                <p>App Store | Social Media</p>
+                <h3><a href="">Creative Web Design</a></h3>
+                <a class="portfolio-link-icon" href=""
+                  ><i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+            <!-- single portfolio item -->
+
+            <div class="portfolio-item application photography">
+              <img src="./asset/image/template15 (1).jpg" alt="portfolio-6" />
+              <div class="portfolio-content-overlay">
+                <p>App Store | Social Media</p>
+                <h3><a href="">Creative Web Design</a></h3>
+                <a class="portfolio-link-icon" href=""
+                  ><i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+            <!-- single portfolio item -->
+          </div>
         </div>
       </div>
-      <div class="protfolio-section">
-        <img src="./asset/image/template10 (2).jpg" alt="" />
-        <img src="./asset/image/template11 (2).jpg" alt="" />
-        <img src="./asset/image/template12 (2).jpg" alt="" />
-        <img src="./asset/image/template13 (2).jpg" alt="" />
-        <img src="./asset/image/template14 (2).jpg" alt="" />
-        <img src="./asset/image/template15 (1).jpg" alt="" />
-      </div>
     </section>
+    <!-- Portfolio section end -->
+
     <!-- Portfolio section end -->
 
     <!-- counter section start  -->
-    <section class="container-fluid">
-      <div class="counter-wrapper">
-        <div class="counter">
-          <h1 class="count" data-target="23">23</h1>
-          <h4>Years Helping Business</h4>
-        </div>
-        <div class="counter">
-          <h1 class="count" data-target="250">0</h1>
-          <h4>Working Employees</h4>
-        </div>
-        <div class="counter">
-          <h1 class="count" data-target="4500 ">0</h1>
-          <h4>Complete Projects</h4>
-        </div>
-        <div class="counter">
-          <h1 class="count" data-target="3000">0</h1>
-          <h4>Happy Customers</h4>
+    <section class="container-fluid banner-img">
+      <div class="container">
+        <div class="count-section">
+          <div class="counter">
+            <span data-target="23" class="count">23</span><span>+</span>
+            <h6>Years Helping Business</h6>
+          </div>
+          <div class="counter">
+            <span data-target="250" class="count">250</span>
+            <span>+</span>
+            <h6>Working Employees</h6>
+          </div>
+          <div class="counter">
+            <span data-target="4500" class="count">4500</span>
+            <span>+</span>
+            <h6>Complete Projects</h6>
+          </div>
+          <div class="counter">
+            <span data-target="3000" class="count">3000</span><span>+</span>
+            <h6>Happy Customers</h6>
+          </div>
         </div>
       </div>
-    </section>
+</section>
+
     <!-- counter section end -->
     <!-- client feedback section  -->
-    <section class="container-fluid client-feedback">
-      <div class="container">
-        <div class="client-feedback-content">
-          <h3>OUR TESTIMONIAL</h3>
-          <h2>Client Feedback</h2>
-        </div>
+  
         <div class="client-feedback-inner">
-          <div class="client-feedback-card-text">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-            </ul>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
-              earum ullam cumque rem nostrum beatae voluptatum temporibus,
-              reiciendis ratione cupiditate! Ab sunt ipsum quidem adipisci?
-            </p>
-            <div class="client-feedback-card-img">
-              <img src="./asset/image/template17.jpg" alt="" />
+          <div class="container">
+            <div class="client-feedback-content">
+              <h3>OUR TESTIMONIAL</h3>
+              <h2>Client Feedback</h2>
             </div>
-            <div class="client-feedback-name">
-              <h3>Saabir al-Obeid</h3>
-              <span class="place">Turkey</span>
-            </div>
-          </div>
-          <div class="client-feedback-card-text">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-            </ul>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
-              earum ullam cumque rem nostrum beatae voluptatum temporibus,
-              reiciendis ratione cupiditate! Ab sunt ipsum quidem adipisci?
-            </p>
-            <div class="client-feedback-card-img">
-              <img src="./asset/image/template18.jpg" alt="" />
-            </div>
-            <div class="client-feedback-name">
-              <h3>Zahra Burnett</h3>
-              <span class="place">United States</span>
-            </div>
-          </div>
-          <div class="client-feedback-card-text">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-star"></i></a>
-              </li>
-            </ul>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
-              earum ullam cumque rem nostrum beatae voluptatum temporibus,
-              reiciendis ratione cupiditate! Ab sunt ipsum quidem adipisci?
-            </p>
-            <div class="client-feedback-card-img">
-              <img src="./asset/image/template19 (1).jpg" alt="" />
-            </div>
-            <div class="client-feedback-name">
-              <h3>Stevie Wills</h3>
-              <span class="place">Germany</span>
-            </div>
-          </div>
-        </div>
+            <section class="splide" aria-label="Basic Structure Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="client-feedback-card-text">
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                      </ul>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Tempora, earum ullam cumque rem nostrum beatae voluptatum
+                        temporibus, reiciendis ratione cupiditate! Ab sunt ipsum
+                        quidem adipisci?
+                      </p>
+                      <div class="client-feedback-card-img">
+                        <img src="./asset/image/template17.jpg" alt="" />
+                      </div>
+                      <div class="client-feedback-name">
+                        <h3>Saabir al-Obeid</h3>
+                        <span class="place">Turkey</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="client-feedback-card-text">
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                      </ul>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Tempora, earum ullam cumque rem nostrum beatae voluptatum
+                        temporibus, reiciendis ratione cupiditate! Ab sunt ipsum
+                        quidem adipisci?
+                      </p>
+                      <div class="client-feedback-card-img">
+                        <img src="./asset/image/template18.jpg" alt="" />
+                      </div>
+                      <div class="client-feedback-name">
+                        <h3>Saabir al-Obeid</h3>
+                        <span class="place">Turkey</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="client-feedback-card-text">
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </li>
+                      </ul>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Tempora, earum ullam cumque rem nostrum beatae voluptatum
+                        temporibus, reiciendis ratione cupiditate! Ab sunt ipsum
+                        quidem adipisci?
+                      </p>
+                      <div class="client-feedback-card-img">
+                        <img src="./asset/image/template19 (1).jpg" alt="" />
+                      </div>
+                      <div class="client-feedback-name">
+                        <h3>Saabir al-Obeid</h3>
+                        <span class="place">Turkey</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
       </div>
     </section>
     <!-- client feedback end -->
@@ -602,31 +722,33 @@
       <div class="Customer-inner">
         <div class="Customer-img">
           <div class="Customer-logo">
-            <img src="./asset/image/template27.png" alt="" />
+            <a href="#"> <img src="./asset/image/template27.png" alt="" /></a>
           </div>
           <div class="Customer-logo">
-            <img src="./asset/image/template28.png" alt="" />
+            <a href="#"><img src="./asset/image/template28.png" alt="" /></a>
           </div>
           <div class="Customer-logo">
-            <img src="./asset/image/template29.png" alt="" />
+            <a href="#"> <img src="./asset/image/template29.png" alt="" /></a>
           </div>
           <div class="Customer-logo">
-            <img src="./asset/image/template30.png" alt="" />
-          </div>
-          <div>
-            <img src="./asset/image/template31.png" alt="" />
+            <a href="#"> <img src="./asset/image/template30.png" alt="" /></a>
           </div>
           <div class="Customer-logo">
-            <img src="./asset/image/template32.png" alt="" />
+            <a href="#"> <img src="./asset/image/template31.png" alt="" /></a>
           </div>
-          <div class="Customer-logo">
-            <img src="./asset/image/template33.png" alt="" />
+        </div>
+        <div class="Customer-img2">
+          <div class="Customer-logo1">
+            <a href="#"><img src="./asset/image/template32.png" alt="" /></a>
           </div>
-          <div class="Customer-logo">
-            <img src="./asset/image/template34.png" alt="" />
+          <div class="Customer-logo1">
+            <a href="#"><img src="./asset/image/template33.png" alt="" /></a>
           </div>
-          <div class="Customer-logo">
-            <img src="./asset/image/template35.png" alt="" />
+          <div class="Customer-logo1">
+            <a href="#"><img src="./asset/image/template34.png" alt="" /></a>
+          </div>
+          <div class="Customer-logo1">
+            <a href="#"><img src="./asset/image/template35.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -634,11 +756,21 @@
     <!-- Customer section end -->
 
     <!-- text typing animation -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+      integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    ;
+    <!-- vanilla tilt js  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
       integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
       crossorigin="anonymous"
     ></script>
+    <!-- text typing animation -->
     <script>
       var typing = new Typed(".text", {
         strings: ["", "Freelancer", "Web Designer", "Web Developer"],
@@ -647,6 +779,10 @@
         loop: true,
       });
     </script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 
     <script src="./asset/js/main.js"></script>
   </body>
